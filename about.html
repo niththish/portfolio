@@ -1,0 +1,87 @@
+<style>
+    h2,i{
+        color: #FF6D04;
+    }
+    #image1,#image2,#image2,#image3,#image4,#image5,#image6{
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        background-position: center;
+        background-repeat: no-repeat; 
+        background-size: cover;
+        border: 4px solid #FF6D04;
+    }
+    
+    #image1{
+        background-image: url("data/angular.png");
+        animation: imageAnimation .7s ease;
+    }
+    #image2{
+        background-image: url("data/java.jpg");
+        animation: imageAnimation 1.5s ease;
+    }
+    #image3{
+        background-image: url("data/python.png");
+        animation: imageAnimation 1.75s ease;
+    }
+    #image4{
+        background-image: url("data/node.png");
+        animation: imageAnimation 2s ease;
+    }
+    #image5{
+        background-image: url("data/xd.jfif");
+        animation: imageAnimation 2.5s ease;
+    }
+    #image6{
+        background-image: url("data/htmlcss.png");
+        animation: imageAnimation 3s ease;
+    }
+
+    @keyframes imageAnimation {
+        0%{
+            transform: scale(0.7);
+            opacity: 0;
+        }
+        100%{
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+    
+        
+
+    @media only screen and (max-width: 500px) {
+        h2,i,div,h5{
+            font-size: 1rem;
+        }        
+    }
+</style>
+<nav-component></nav-component>
+<div class="container">
+    <div class="row pt-5">
+        <div class="col-12 col-sm-10 pt-2">
+            <h2>ME</h2>
+            <h5>Niththish | Learner | Software Developer</h5>
+            <i class="fa fa-map-marker" aria-hidden="true"></i><span class="pl-2">Chennai, Tamilnadu</span>
+            <div class="mt-4">
+                <h5 class="font-weight-normal ">capable of handling multiple tasks on my daily basis.</h5>
+                <h5 class="font-weight-normal ">Basically, a web developer with some prior knowledge about both frontend and backend.</h5>
+                <h5 class="font-weight-normal ">Likes working in teams to solve real world problems.</h5>
+            </div>
+            
+        </div>
+
+        <div class="col-12 pt-3 pt-sm-5">
+            <h2>SKILLS</h2>
+            <div class="row mt-1 mt-sm-4 mb-4 justify-content-center">
+                    <div class="shadow-lg mt-4 mt-lg-0 ml-2 ml-sm-5" id="image1" alt=""></div>
+                    <div class="shadow-lg mt-4 mt-lg-0 ml-2 ml-sm-5" id="image2" alt=""></div>
+                    <div class="shadow-lg mt-4 mt-lg-0 ml-2 ml-sm-5" id="image3" alt=""></div>
+                    <div class="shadow-lg mt-4 mt-lg-0 ml-2 ml-sm-5" id="image4" alt=""></div>
+                    <div class="shadow-lg mt-4 mt-lg-0 ml-2 ml-sm-5" id="image5" alt=""></div>
+                    <div class="shadow-lg mt-4 mt-lg-0 ml-2 ml-sm-5" id="image6" alt=""></div>                
+            </div>
+        </div>
+    </div>
+    
+</div>
