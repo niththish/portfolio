@@ -39,7 +39,7 @@ function worksController($scope){
         },
         {
             title:"Java projects",
-            description:"Some of my small java projects related to database connection,file handling,solutions etc",
+            description:"Some of my small java projects related to database connection,file handling,code solutions etc",
             link:"https://github.com/niththish/java-programs"
         },
 
