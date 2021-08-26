@@ -23,24 +23,24 @@ function worksController($scope){
             link:"https://github.com/niththish/tourist-guide"
         },
         {
-            title:"Carti5",
-            description:"This is my first Angular js application developed for friend of friend to post blogs about the products",
-            link:"https://github.com/niththish/carti5"
+            title:"Adobe Designs",
+            description:"Some of my design works containing for both mobile and web",
+            link:"https://github.com/niththish/Designs"
         },
         {
             title:"Pathole Classification",
             description:"This is an jupyter notebook developed for the classification of road conditions",
-            link:"https://github.com/niththish/pathole_classification"
+            link:"https://github.com/niththish/jupyter-notebook/tree/main/pathole_classification"
         },
         {
             title:"Leaf Disease Classification",
             description:"This is an jupyter notebook developed for the classifying varoius leaf disease",
-            link:"https://github.com/niththish/leaf-diseases-classification"
+            link:"https://github.com/niththish/jupyter-notebook/tree/main/leaf-disease-classification"
         },
         {
-            title:"Neo Bookstore",
-            description:"This is an full stack application developed using angular and spring boot with my teammates in the hackathon for selling books online",
-            link:"https://github.com/iamneowise/BookStore-Application-Angular-FS_Team_129"
+            title:"Java projects",
+            description:"Some of my small java projects related to database connection,file handling,solutions etc",
+            link:"https://github.com/niththish/java-programs"
         },
 
         
