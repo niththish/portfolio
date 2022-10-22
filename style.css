@@ -1,0 +1,276 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  background-image: linear-gradient(45deg, #ffba30, #ff6600);
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  border: none;
+  background: none;
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+.nav-links {
+  display: none;
+}
+
+.nav-links ul {
+  list-style: none;
+}
+
+.nav-links ul li {
+  margin: 10px 0px;
+}
+
+.toggle-view {
+  display: block;
+}
+
+#home,
+#skills,
+#contact {
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
+  height: 100vh;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.header {
+  position: absolute;
+  top: 100px;
+  align-self: flex-start;
+  padding-left: 1rem;
+}
+
+#home {
+  animation-name: homeAnimation;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+}
+
+.left-content {
+  order: 1;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.right-content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.name {
+  color: #ff6600;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.location {
+  fill: #ff6600;
+}
+
+#skills div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+#skills div span {
+  flex-basis: 46%;
+  padding: 5px 10px;
+  margin: 5px;
+  background: #ff6600;
+  font-size: 1.2rem;
+  color: #fff;
+  transition: all ease 0.5s;
+}
+
+#skills div span:hover {
+  transform: scale(1.2);
+}
+
+#projects {
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.project_h1 {
+  justify-self: flex-start;
+  padding-left: 0rem;
+  position: relative;
+  top: -25px;
+}
+
+.card {
+  color: #fff;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(45deg, #ffba30, #ff6600);
+  transition: all ease 0.5s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-body {
+  margin-top: 25px;
+}
+
+.source-btn {
+  margin-top: 10px;
+  background: #fff;
+  color: #ff6600;
+  padding: 0.3rem 1rem;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+form > * {
+  margin: 0.2rem;
+  padding: 1rem;
+}
+
+input[type="submit"] {
+  background-color: #ff6600;
+  color: #fff;
+  border: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+#contact div {
+  width: 100%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0.5rem;
+}
+
+#contact div p {
+  font-family: "Poppins", sans-serif;
+}
+
+textarea {
+  resize: none;
+}
+
+p a {
+  margin: 0rem 0.5rem;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+a i {
+  color: #ff6600;
+}
+
+@media screen and (min-width: 768px) {
+  nav {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .toggle-btn {
+    display: none;
+  }
+  .nav-links {
+    display: block;
+  }
+  .nav-links ul {
+    display: flex;
+  }
+  .nav-links ul {
+    gap: 2rem;
+  }
+
+  #home {
+    flex-direction: row;
+  }
+  .left-content {
+    order: 0;
+    text-align: left;
+    font-size: 1.5rem;
+  }
+  .name {
+    font-size: 2rem;
+  }
+  #skills p {
+    font-size: 1.5rem;
+  }
+  #contact div p {
+    font-size: 1.5rem;
+  }
+  #skills div {
+    width: fit-content;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  #skills div span {
+    flex-basis: auto;
+  }
+  .project_h1 {
+    padding-left: 2rem;
+  }
+
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .card {
+    flex-basis: 45%;
+    margin: 10px;
+  }
+}
+
+@keyframes homeAnimation {
+  from {
+    opacity: 0;
+    top: -15px;
+  }
+  to {
+    opacity: 1;
+    top: 0;
+  }
+}
