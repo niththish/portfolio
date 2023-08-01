@@ -2,23 +2,22 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
   scroll-behavior: smooth;
 }
 
 nav {
+  width: 90%;
+  margin: 0 auto;
+  padding: 25px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 1rem;
-  background-image: linear-gradient(45deg, #ffba30, #ff6600);
   color: #fff;
-  position: sticky;
-  top: 0;
-  z-index: 2;
 }
 
 .nav-header {
+  font-size: 1.1rem;
   display: flex;
   justify-content: space-between;
 }
@@ -39,6 +38,8 @@ nav {
 }
 
 .nav-links ul li {
+  font-weight: 500;
+  font-size: 1.1rem;
   margin: 10px 0px;
 }
 
@@ -46,10 +47,30 @@ nav {
   display: block;
 }
 
-#home,
+#home {
+  background-image: linear-gradient(45deg, #ffba30, #ff6600);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#home_content {
+  position: relative;
+  width: 95%;
+  margin: 0 auto;
+  height: -webkit-fill-available;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  animation-name: homeAnimation;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+}
+
 #skills,
 #contact {
-  max-width: 1000px;
   margin: 0 auto;
   width: 100%;
   height: 100vh;
@@ -78,22 +99,64 @@ nav {
   order: 1;
   text-align: center;
   font-size: 1rem;
+  color: #292929;
+  font-weight: 500;
 }
 
 .right-content {
   width: 100%;
   display: flex;
   justify-content: center;
+  position: relative;
+}
+
+.right-content img {
+  max-width: 500px;
+  max-height: 500px;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.bottom-box {
+  max-width: 500px;
+  max-height: 500px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  /* bottom: -25px;
+  right: -25px; */
+  border-radius: 10px;
+  background-color: rgba(255, 232, 204, 0.2);
+  z-index: 0;
+}
+
+.image {
+  max-width: 500px;
+  position: relative;
+}
+
+.top-box {
+  max-width: 500px;
+  max-height: 500px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  /* top: -25px;
+  left: -25px; */
+  border-radius: 10px;
+  background-color: rgba(255, 232, 204, 0.2);
+  z-index: 0;
 }
 
 .name {
-  color: #ff6600;
+  color: #fff;
   font-weight: bold;
   font-size: 1.3rem;
 }
 
 .location {
-  fill: #ff6600;
+  fill: #fff;
 }
 
 #skills div {
@@ -207,6 +270,8 @@ a i {
 
 @media screen and (min-width: 768px) {
   nav {
+    width: 90%;
+    margin: 0 auto;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -224,14 +289,27 @@ a i {
     gap: 2rem;
   }
 
-  #home {
+  #home_content {
     flex-direction: row;
+    width: 90%;
+    margin: 0 auto;
   }
   .left-content {
     order: 0;
     text-align: left;
     font-size: 1.5rem;
   }
+
+  .bottom-box {
+    bottom: -25px;
+    right: -25px;
+  }
+
+  .top-box {
+    top: -25px;
+    left: -25px;
+  }
+
   .name {
     font-size: 2rem;
   }
@@ -267,7 +345,7 @@ a i {
 @keyframes homeAnimation {
   from {
     opacity: 0;
-    top: -15px;
+    top: -25px;
   }
   to {
     opacity: 1;
