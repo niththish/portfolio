@@ -31,6 +31,68 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@300;400;500&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/home.css" />
   </head>
-  <body></body>
+
+  <body>
+    <!-- home section -->
+    <section id="home">
+      <!-- navbar -->
+      <nav>
+        <div class="nav-header">
+          <h1>NITHTHISH</h1>
+          <button class="btn toggle-btn"><i class="fas fa-bars"></i></button>
+        </div>
+        <div class="nav-links">
+          <ul>
+            <li><a class="nav-link" href="#home">Home</a></li>
+            <li><a class="nav-link" href="#skills">Skills</a></li>
+            <li><a class="nav-link" href="#projects">Projects</a></li>
+            <li><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <!-- end of navbar -->
+
+      <!-- home content -->
+      <div id="home_content">
+        <div class="left-content">
+          <p>Hello there,</p>
+          <p>I'm <span class="name">NITHTHISH</span></p>
+          <p>
+            engineering graduate | learner | programmer | android and web
+            application developer
+          </p>
+          <p>
+            <svg
+              class="octicon octicon-location location"
+              viewBox="0 0 16 16"
+              version="1.1"
+              width="16"
+              height="16"
+              aria-hidden="true"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M11.536 3.464a5 5 0 010 7.072L8 14.07l-3.536-3.535a5 5 0 117.072-7.072v.001zm1.06 8.132a6.5 6.5 0 10-9.192 0l3.535 3.536a1.5 1.5 0 002.122 0l3.535-3.536zM8 9a2 2 0 100-4 2 2 0 000 4z"
+              ></path>
+            </svg>
+            <span>Chennai</span>
+          </p>
+        </div>
+        <div class="right-content">
+          <div class="image">
+            <div class="top-box"></div>
+            <div class="bottom-box"></div>
+            <img src="./asset/bitmoji.png" alt="niththish profile pic" />
+          </div>
+        </div>
+      </div>
+      <!-- end of home content -->
+    </section>
+    <!-- end of home section -->
+
+    <script src="js/index.js"></script>
+  </body>
 </html>
