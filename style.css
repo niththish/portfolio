@@ -69,7 +69,16 @@ nav {
   animation-timing-function: ease-in-out;
 }
 
-#skills,
+#skills_content {
+  width: 95%;
+  margin: 0 auto;
+}
+
+#skills {
+  position: relative;
+  height: 100vh;
+}
+
 #contact {
   margin: 0 auto;
   width: 100%;
@@ -80,13 +89,6 @@ nav {
   justify-content: center;
   align-items: center;
   position: relative;
-}
-
-.header {
-  position: absolute;
-  top: 100px;
-  align-self: flex-start;
-  padding-left: 1rem;
 }
 
 #home {
@@ -103,7 +105,13 @@ nav {
   font-weight: 500;
 }
 
+.left-content p {
+  line-height: 1.5rem;
+  margin-bottom: 2px;
+}
+
 .right-content {
+  height: 50%;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -113,9 +121,11 @@ nav {
 .right-content img {
   max-width: 500px;
   max-height: 500px;
+  height: 100%;
   width: 100%;
   position: relative;
   z-index: 1;
+  top: -25px;
 }
 
 .bottom-box {
@@ -132,6 +142,7 @@ nav {
 }
 
 .image {
+  height: 100%;
   max-width: 500px;
   position: relative;
 }
@@ -298,6 +309,14 @@ a i {
     order: 0;
     text-align: left;
     font-size: 1.5rem;
+  }
+
+  .left-content p {
+    line-height: 2rem;
+  }
+
+  .right-content {
+    height: 60%;
   }
 
   .bottom-box {
