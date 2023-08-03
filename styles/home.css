@@ -97,6 +97,8 @@ nav {
   height: 100%;
   max-width: 500px;
   position: relative;
+  transform: translateZ(20px);
+  transform-style: preserve-3d;
 }
 
 .bottom-box {
