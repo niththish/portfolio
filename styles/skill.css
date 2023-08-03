@@ -1,0 +1,55 @@
+#skills_content {
+  position: relative;
+  width: 95%;
+  margin: 0 auto;
+  height: -webkit-fill-available;
+  display: flex;
+  flex-direction: column;
+  padding: 25px 0;
+}
+
+#skills {
+  min-height: 100vh;
+}
+
+#skills_content div {
+  min-height: 90vh;
+  align-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+#skills_content div span {
+  width: 100px;
+  height: 100px;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+    45deg,
+    rgba(255, 186, 48, 1),
+    rgba(255, 102, 0, 0.75)
+  );
+  color: #fff;
+  border-radius: 5px;
+  text-transform: uppercase;
+  text-align: center;
+  animation: skillAnimation 2.5s infinite ease-in-out alternate-reverse;
+  transition: all ease-in-out;
+  cursor: pointer;
+}
+
+@keyframes skillAnimation {
+  0% {
+    border-radius: 10px;
+    transform: scale(0.95);
+  }
+  100% {
+    border-radius: 5px;
+    transform: scale(1);
+  }
+}
