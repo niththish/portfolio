@@ -109,8 +109,6 @@ nav {
   width: 100%;
   height: 100%;
   position: absolute;
-  /* bottom: -25px;
-  right: -25px; */
   border-radius: 10px;
   background-color: rgba(255, 232, 204, 0.2);
   z-index: 0;
@@ -122,8 +120,6 @@ nav {
   width: 100%;
   height: 100%;
   position: absolute;
-  /* top: -25px;
-  left: -25px; */
   border-radius: 10px;
   background-color: rgba(255, 232, 204, 0.2);
   z-index: 0;
@@ -177,11 +173,13 @@ nav {
   .bottom-box {
     bottom: -25px;
     right: -25px;
+    animation: bottomBoxAnimation 1.5s infinite ease-in-out alternate-reverse;
   }
 
   .top-box {
     top: -25px;
     left: -25px;
+    animation: topBoxAnimation 1.5s infinite ease-in-out alternate-reverse;
   }
 }
 
@@ -198,9 +196,27 @@ nav {
 
 @keyframes imageAnimation {
   0% {
-    transform: scale(0.95);
+    transform: scale(0.98);
   }
   100% {
     transform: scale(1);
+  }
+}
+
+@keyframes bottomBoxAnimation {
+  from {
+    border-radius: 25px 0;
+  }
+  to {
+    border-radius: 0 25px;
+  }
+}
+
+@keyframes topBoxAnimation {
+  from {
+    border-radius: 0 25px;
+  }
+  to {
+    border-radius: 25px 0;
   }
 }
