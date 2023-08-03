@@ -12,6 +12,10 @@
   min-height: 100vh;
 }
 
+#skills_content .header {
+  margin-bottom: 25px;
+}
+
 #skills_content div {
   min-height: 90vh;
   align-content: center;

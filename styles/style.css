@@ -28,47 +28,6 @@
   fill: #fff;
 }
 
-#projects {
-  max-width: 1000px;
-  margin: 0 auto;
-  width: 100%;
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-}
-
-.project_h1 {
-  justify-self: flex-start;
-  padding-left: 0rem;
-  position: relative;
-  top: -25px;
-}
-
-.card {
-  color: #fff;
-  padding: 1rem;
-  margin-bottom: 1rem;
-  background: linear-gradient(45deg, #ffba30, #ff6600);
-  transition: all ease 0.5s;
-}
-
-.card:hover {
-  transform: scale(1.05);
-}
-
-.card-body {
-  margin-top: 25px;
-}
-
-.source-btn {
-  margin-top: 10px;
-  background: #fff;
-  color: #ff6600;
-  padding: 0.3rem 1rem;
-  border-radius: 50px;
-  cursor: pointer;
-}
-
 form {
   display: flex;
   flex-direction: column;
@@ -123,19 +82,5 @@ a i {
 
   #contact div p {
     font-size: 1.5rem;
-  }
-
-  .project_h1 {
-    padding-left: 2rem;
-  }
-
-  .cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .card {
-    flex-basis: 45%;
-    margin: 10px;
   }
 }
