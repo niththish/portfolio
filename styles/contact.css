@@ -46,10 +46,6 @@ input[type="submit"] {
   padding: 0.5rem;
 }
 
-#contact div p {
-  font-family: "Poppins", sans-serif;
-}
-
 textarea {
   resize: none;
 }
@@ -72,7 +68,7 @@ a i {
     font-size: 2rem;
   }
 
-  #contact div p {
-    font-size: 1.5rem;
+  #contact {
+    width: 95%;
   }
 }
